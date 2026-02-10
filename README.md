@@ -1,16 +1,51 @@
-# React + Vite
+# Career Development Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional, mobile-first web application designed for high school CTE Career Development courses (Automotive + Medical Assisting).
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Unit-based Curriculum**: 60-day course structure organized into logical units.
+- **Daily Deliverables**: Clear instructions, rationale, and submission guidelines for every day.
+- **Artifact Tracking**: Stay on top of required pass/fail deliverables.
+- **AI Policy**: Integrated guidance on responsible AI use in the workplace.
+- **Responsive Design**: Optimized for mobile devices used in the classroom.
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React + Vite**: For a fast, modern development experience.
+- **Lucide React**: Professional iconography.
+- **Vanilla CSS**: Clean, custom styling with a blue/teal professional theme.
 
-## Expanding the ESLint configuration
+## 📦 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Build for Production**:
+   ```bash
+   npm run build
+   ```
+
+## 🌐 Deployment to GitHub Pages
+
+1. **Create a GitHub Repository**: Create a new repository on GitHub.
+2. **Add Remote**:
+   ```bash
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   ```
+3. **Push to GitHub**:
+   ```bash
+   git push -u origin main
+   ```
+4. **Deploy**:
+   The project is ready to be built. You can use a GitHub Action or the `gh-pages` package to host the `dist` folder.
+
+## 📄 License
+This project is for educational use.
