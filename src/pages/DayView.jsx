@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import data from '../data/courseContent.json';
-import { ChevronLeft, Info, HelpCircle, ListTodo, Send, Sparkles } from 'lucide-react';
+import { ChevronLeft, Info, HelpCircle, ListTodo, Send, Sparkles, BookOpen, ExternalLink } from 'lucide-react';
 
 const DayView = () => {
     const { dayId } = useParams();
@@ -84,6 +84,43 @@ const DayView = () => {
                         ))}
                     </ul>
                 </section>
+
+                {/* Resources Section */}
+                {day.resources && day.resources.length > 0 && (
+                    <section className="card" style={{ borderLeft: '4px solid #8b5cf6', marginBottom: '24px' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', color: '#8b5cf6' }}>
+                            <BookOpen size={20} />
+                            <h3 style={{ margin: 0 }}>Recommended Resources</h3>
+                        </div>
+                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '16px' }}>
+                            {day.resources.map((resource, i) => (
+                                <a
+                                    key={i}
+                                    href={resource.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{
+                                        display: 'block',
+                                        padding: '16px',
+                                        backgroundColor: 'var(--bg)',
+                                        borderRadius: '8px',
+                                        textDecoration: 'none',
+                                        border: '1px solid transparent',
+                                        transition: 'all 0.2s ease'
+                                    }}
+                                >
+                                    <h4 style={{ margin: '0 0 8px 0', color: 'var(--primary)', fontSize: '1rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                        {resource.title}
+                                        <ExternalLink size={14} />
+                                    </h4>
+                                    <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-light)', lineHeight: 1.4 }}>
+                                        {resource.description}
+                                    </p>
+                                </a>
+                            ))}
+                        </div>
+                    </section>
+                )}
 
                 {/* Deliverable Section */}
                 <section className="card" style={{ backgroundColor: '#f0f9ff', border: '1px solid #bae6fd', boxShadow: '0 10px 15px -3px rgba(186, 230, 253, 0.2)' }}>

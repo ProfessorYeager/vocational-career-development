@@ -116,6 +116,18 @@
                         "Discuss workplace expectations: responsiveness, tone, documentation.",
                         "Create a personal baseline checklist."
                     ],
+                    "resources": [
+                        {
+                            "title": "10 Things Students Should Never Post on Social Media",
+                            "url": "https://www.commonsense.org/education/articles/10-things-students-should-never-post-on-social-media",
+                            "description": "A guide to avoiding common digital pitfalls."
+                        },
+                        {
+                            "title": "How to Clean Up Your Digital Footprint",
+                            "url": "https://www.skillsyouneed.com/rhubarb/clean-up-digital-footprint.html",
+                            "description": "Practical steps to audit and improve your online presence."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Professional Email Response (Draft)",
                         "type": "email_draft",
@@ -134,6 +146,13 @@
                         "Rewrite a poorly written email into a professional one.",
                         "Optional AI: generate draft, then revise for accuracy and tone."
                     ],
+                    "resources": [
+                        {
+                            "title": "Email Etiquette for Students",
+                            "url": "https://www.indeed.com/career-advice/career-development/email-etiquette-for-students",
+                            "description": "Best practices for writing professional emails."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Rewritten Professional Email",
                         "type": "email_draft",
@@ -151,6 +170,13 @@
                         "Define AI in plain language.",
                         "Compare: good AI output vs flawed AI output.",
                         "Practice: Ask AI 'What are the required oil change intervals for a 2024 Toyota Camry?' then verify this using the official Toyota owner's manual (available on Toyota.com)."
+                    ],
+                    "resources": [
+                        {
+                            "title": "ChatGPT Ethics: A Guide for Students",
+                            "url": "https://www.scribbr.com/ai-tools/chatgpt-ethics/",
+                            "description": "Understanding the ethical implications of using AI tools."
+                        }
                     ],
                     "deliverable": {
                         "title": "AI Use Case in My Field",
@@ -187,6 +213,13 @@
                         "Self-audit using checklist.",
                         "Discuss privacy settings and professional presence.",
                         "Plan one concrete improvement action."
+                    ],
+                    "resources": [
+                        {
+                            "title": "How to Google Yourself (And Why You Should)",
+                            "url": "https://www.nyu.edu/students/student-success/career-development/career-toolbox/personal-branding/google-yourself.html",
+                            "description": "A guide from NYU on auditing your personal brand."
+                        }
                     ],
                     "deliverable": {
                         "title": "Digital Professionalism Checklist",
