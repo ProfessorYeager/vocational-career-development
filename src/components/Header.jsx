@@ -23,7 +23,7 @@ const Header = () => {
             }}>
                 <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--primary)', fontWeight: 800, fontSize: '1.2rem' }}>
                     <GraduationCap size={32} />
-                    <span className="logo-text">CareerDev</span>
+                    <span className="logo-text">VCD</span>
                 </Link>
                 <nav style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
                     <Link to="/" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-light)' }}>Home</Link>

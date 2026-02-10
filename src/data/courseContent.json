@@ -1,7 +1,7 @@
 {
     "site": {
-        "title": "CTE Career Development (Automotive + Medical Assisting)",
-        "subtitle": "60-day, artifact-based Pass/Fail course with daily deliverables (Tue–Fri)",
+        "title": "Vocational Career Development (VCD)",
+        "subtitle": "Professional readiness and digital literacy for high school technical programs.",
         "audience": [
             "CTE Students",
             "Automotive",
@@ -119,7 +119,7 @@
                     "deliverable": {
                         "title": "Professional Email Response (Draft)",
                         "type": "email_draft",
-                        "instructions": "Write a short professional email responding to a workplace scenario provided in class (or posted). Keep it clear, polite, and complete.",
+                        "instructions": "Scenario: You are running 15 minutes late for your shift because of unexpected traffic. Write a short professional email to your supervisor (Mr. Jones) explaining the situation and your ETAs. Keep it clear, polite, and complete.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -137,7 +137,7 @@
                     "deliverable": {
                         "title": "Rewritten Professional Email",
                         "type": "email_draft",
-                        "instructions": "Rewrite the provided ‘bad email’ into a professional version. Include subject line and a clear action request.",
+                        "instructions": "Rewrite the following ‘bad email’ into a professional version: 'hey i cant come in today my car is trippin see ya tomorrow.' Your professional version should include a subject line, proper greeting, clear reason, and a professional closing.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -150,7 +150,7 @@
                     "how": [
                         "Define AI in plain language.",
                         "Compare: good AI output vs flawed AI output.",
-                        "Practice: ask AI a question, then verify with a second source (teacher-provided or in-class check)."
+                        "Practice: Ask AI 'What are the required oil change intervals for a 2024 Toyota Camry?' then verify this using the official Toyota owner's manual (available on Toyota.com)."
                     ],
                     "deliverable": {
                         "title": "AI Use Case in My Field",
@@ -173,7 +173,7 @@
                     "deliverable": {
                         "title": "AI Ethics Reflection",
                         "type": "reflection",
-                        "instructions": "Answer: (1) When is AI use appropriate? (2) When is it not? (3) What will you do to stay accountable?",
+                        "instructions": "Review these scenarios: (A) Using AI to research how a specific engine component works. (B) Using AI to write a patient summary without checking the facts. (C) Using AI to generate a template for a cover letter and then adding your own details. Reflect on which are ethical and why. Then answer: (1) When is AI use appropriate? (2) When is it not? (3) What will you do to stay accountable?",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -312,7 +312,7 @@
                     "deliverable": {
                         "title": "Career Ladder Notes",
                         "type": "notes",
-                        "instructions": "Submit a short set of notes outlining entry → mid → advanced roles and what changes at each stage.",
+                        "instructions": "Research this sample ladder for your field: (1) Lube Technician -> Lead Tech -> Shop Manager OR (2) Medical Assistant -> Senior MA -> Clinic Coordinator. Submit 3-5 sentences on what skills or certs are needed for the 'Lead' or 'Senior' role.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -363,7 +363,7 @@
                     "deliverable": {
                         "title": "Career Goal Statement (Draft)",
                         "type": "document",
-                        "instructions": "1 page max. Include: target role, why, credentials needed, and 3 next steps.",
+                        "instructions": "Use this template: 'My long-term goal is to become a [Role]. To get there, I will first earn my [Cert/License] within [Timeframe]. I will start by [Action 1] and [Action 2].' Submit 1 page max.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -446,7 +446,7 @@
                     "deliverable": {
                         "title": "Professional Outreach Draft",
                         "type": "message_draft",
-                        "instructions": "Write a short outreach message to a potential mentor/employer (template style).",
+                        "instructions": "Write an outreach message using this structure: 'Hi [Name], I'm a student in the VCD program at [School]. I'm interested in [Field] and was wondering if you could share one piece of advice for someone starting out. Thank you, [Your Name].'",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -590,7 +590,7 @@
                     "deliverable": {
                         "title": "Customized Cover Letter",
                         "type": "document",
-                        "instructions": "Submit a cover letter customized to a posting (real or teacher-provided).",
+                        "instructions": "Scenario: Apply for an 'Entry-Level Technician' or 'Medical Assistant I' role at 'City Systems'. The posting emphasizes 'punctuality, basic digital literacy, and a willingness to learn'. Customize your cover letter template for this specific role.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -638,7 +638,7 @@
                     "deliverable": {
                         "title": "Interview Answers Outline",
                         "type": "outline",
-                        "instructions": "Outline answers for 3 common questions (Tell me about yourself, strengths, why this job).",
+                        "instructions": "Outline answers for these 3 common questions: (1) 'Tell me about yourself (include your VCD progress)' (2) 'What are your top 3 technical strengths?' (3) 'Why do you want to work in this industry?'",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -672,7 +672,7 @@
                     "deliverable": {
                         "title": "Mock Interview Participation",
                         "type": "participation",
-                        "instructions": "Email a short summary of your mock interview: question asked + your response + one improvement.",
+                        "instructions": "Roleplay Scenario: You are interviewing for a junior role. Have a peer or AI act as the interviewer (Mr. Green). They ask: 'Why should we hire you over someone with more experience?' Email a short summary of how you answered + one thing you'd change next time.",
                         "ai_allowed": false,
                         "ai_disclosure_required": false
                     }
@@ -768,7 +768,7 @@
                     "deliverable": {
                         "title": "Scenario Response (Conflict)",
                         "type": "short_response",
-                        "instructions": "Choose a scenario and write a professional response + next step.",
+                        "instructions": "Scenario: A teammate tells you that your documentation style is 'sloppy' and needs to be redone. Respond professionally: (1) Acknowledge the feedback. (2) Ask for a specific example of what to improve. (3) Propose a solution/next step.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -800,7 +800,7 @@
                     "deliverable": {
                         "title": "Business Idea (Field-Specific)",
                         "type": "idea",
-                        "instructions": "Submit one business idea in your field and the problem it solves.",
+                        "instructions": "Think of a problem in your field (e.g., long wait times for oil changes or difficulty tracking patient vitals). Describe your business idea: 'My business, [Name], solves the problem of [Problem] by [Solution].'",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -832,7 +832,7 @@
                     "deliverable": {
                         "title": "Cost vs Price Example",
                         "type": "short_response",
-                        "instructions": "Provide a simple example: cost + price + why profit matters (3–6 sentences).",
+                        "instructions": "Imagine you provide a service (e.g., an oil change or a blood pressure check). (1) List one direct 'Cost' (supplies/time). (2) Set a 'Price' for the service. (3) Explain why the difference (profit) is necessary for the business to survive.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }

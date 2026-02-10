@@ -12,7 +12,7 @@ const Footer = () => {
             textAlign: 'center'
         }}>
             <div className="container">
-                <p>© 2026 CTE Career Development</p>
+                © 2026 Vocational Career Development (VCD)
                 <p style={{ marginTop: '8px' }}>Automotive + Medical Assisting Program</p>
             </div>
         </footer>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import data from '../data/courseContent.json';
-import { ChevronLeft, Calendar, CheckSquare } from 'lucide-react';
+import { ChevronLeft, Calendar, CheckSquare, Info, Sparkles } from 'lucide-react';
 
 const UnitView = () => {
     const { unitId } = useParams();
@@ -9,22 +9,60 @@ const UnitView = () => {
 
     if (!unit) return <div className="container">Unit not found</div>;
 
+    // Unit-specific styles/icons
+    const unitConfig = {
+        'U1': { color: '#0284c7', icon: <Info size={40} /> },
+        'U2': { color: '#0d9488', icon: <Calendar size={40} /> },
+        'U3': { color: '#8b5cf6', icon: <CheckSquare size={40} /> },
+        'U4': { color: '#f59e0b', icon: <Sparkles size={40} /> }
+    };
+    const config = unitConfig[unitId] || { color: 'var(--primary)', icon: <Calendar size={40} /> };
+
     return (
         <div className="container">
             <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--text-light)', marginBottom: '24px' }}>
                 <ChevronLeft size={20} /> Back to Course
             </Link>
 
-            <div className="card" style={{ borderLeft: '6px solid var(--primary)', marginBottom: '32px' }}>
-                <span className="badge badge-primary" style={{ marginBottom: '12px' }}>{unit.unit_id}</span>
-                <h1 style={{ margin: 0, fontSize: '1.8rem' }}>{unit.title}</h1>
-                <div style={{ marginTop: '16px' }}>
-                    <h4 style={{ color: 'var(--text-light)', textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '0.05em', marginBottom: '8px' }}>Learning Outcomes</h4>
-                    <ul style={{ paddingLeft: '20px', color: 'var(--text-light)' }}>
-                        {unit.outcomes.map((outcome, i) => (
-                            <li key={i}>{outcome}</li>
-                        ))}
-                    </ul>
+            <div className="card" style={{
+                padding: 0,
+                overflow: 'hidden',
+                border: 'none',
+                marginBottom: '32px',
+                background: `linear-gradient(135deg, ${config.color} 0%, rgba(255,255,255,0) 100%), var(--surface)`,
+                position: 'relative',
+                minHeight: '180px',
+                display: 'flex',
+                alignItems: 'center'
+            }}>
+                {/* Decorative pattern */}
+                <div style={{
+                    position: 'absolute',
+                    right: '5%',
+                    top: '50%',
+                    transform: 'translateY(-50%)',
+                    opacity: 0.1,
+                    color: 'white'
+                }}>
+                    {config.icon}
+                </div>
+
+                <div style={{ padding: '32px', position: 'relative', zIndex: 1 }}>
+                    <span className="badge" style={{ backgroundColor: 'white', color: config.color, marginBottom: '12px' }}>{unit.unit_id}</span>
+                    <h1 style={{ margin: 0, fontSize: '2.2rem', color: 'white', textShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>{unit.title}</h1>
+                </div>
+            </div>
+
+            <div style={{ marginBottom: '40px' }}>
+                <h4 style={{ color: 'var(--text-light)', textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '0.05em', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <Sparkles size={16} /> Learning Outcomes
+                </h4>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
+                    {unit.outcomes.map((outcome, i) => (
+                        <div key={i} className="card" style={{ padding: '16px', backgroundColor: 'var(--bg)', border: '1px solid var(--border)' }}>
+                            <p style={{ margin: 0, fontSize: '0.95rem', color: 'var(--text)' }}>{outcome}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
 
@@ -50,7 +88,7 @@ const UnitView = () => {
                             alignItems: 'center',
                             justifyContent: 'center',
                             fontWeight: 800,
-                            color: 'var(--primary)',
+                            color: config.color,
                             flexShrink: 0
                         }}>
                             {day.day_number}

@@ -22,73 +22,94 @@ const DayView = () => {
 
     return (
         <div className="container" style={{ paddingBottom: '80px' }}>
-            <Link to={`/unit/${unit.unit_id}`} style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--text-light)', marginBottom: '24px' }}>
-                <ChevronLeft size={20} /> Back to {unit.unit_id}
-            </Link>
-
-            <div style={{ marginBottom: '32px' }}>
-                <div style={{ display: 'flex', gap: '8px', marginBottom: '12px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '24px' }}>
+                <Link to={`/unit/${unit.unit_id}`} style={{ display: 'flex', alignItems: 'center', gap: '4px', color: 'var(--text-light)' }}>
+                    <ChevronLeft size={20} /> Back to {unit.unit_id}
+                </Link>
+                <div style={{ display: 'flex', gap: '8px' }}>
                     <span className="badge">Day {day.day_number}</span>
                     <span className="badge badge-primary">{unit.title}</span>
                 </div>
-                <h1 style={{ fontSize: '2.2rem', fontWeight: 800, lineHeight: 1.2 }}>{day.title}</h1>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <div style={{ marginBottom: '40px', padding: '40px', borderRadius: '24px', background: 'var(--surface)', border: '1px solid var(--border)', boxShadow: 'var(--shadow)' }}>
+                <h1 style={{ fontSize: '2.5rem', fontWeight: 800, lineHeight: 1.2, margin: 0, color: 'var(--text)' }}>{day.title}</h1>
+            </div>
+
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', marginBottom: '40px' }}>
                 {/* What Section */}
-                <section className="card">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', color: 'var(--primary)' }}>
-                        <Info size={20} />
-                        <h3 style={{ margin: 0 }}>What?</h3>
+                <section className="card" style={{ borderTop: '4px solid var(--primary)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', color: 'var(--primary)' }}>
+                        <div style={{ padding: '8px', backgroundColor: 'rgba(2, 132, 199, 0.1)', borderRadius: '8px' }}>
+                            <Info size={20} />
+                        </div>
+                        <h3 style={{ margin: 0, fontSize: '1.2rem' }}>What?</h3>
                     </div>
-                    <p>{day.what}</p>
+                    <p style={{ fontSize: '1rem', color: 'var(--text)', lineHeight: 1.6 }}>{day.what}</p>
                 </section>
 
                 {/* Why Section */}
-                <section className="card">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', color: 'var(--secondary)' }}>
-                        <HelpCircle size={20} />
-                        <h3 style={{ margin: 0 }}>Why?</h3>
+                <section className="card" style={{ borderTop: '4px solid var(--secondary)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', color: 'var(--secondary)' }}>
+                        <div style={{ padding: '8px', backgroundColor: 'rgba(13, 148, 136, 0.1)', borderRadius: '8px' }}>
+                            <HelpCircle size={20} />
+                        </div>
+                        <h3 style={{ margin: 0, fontSize: '1.2rem' }}>Why?</h3>
                     </div>
-                    <p>{day.why}</p>
+                    <p style={{ fontSize: '1rem', color: 'var(--text)', lineHeight: 1.6 }}>{day.why}</p>
                 </section>
+            </div>
 
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
                 {/* How Section */}
-                <section className="card">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', color: 'var(--accent)' }}>
+                <section className="card" style={{ borderLeft: '4px solid var(--accent)' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px', color: 'var(--accent)' }}>
                         <ListTodo size={20} />
                         <h3 style={{ margin: 0 }}>How?</h3>
                     </div>
-                    <ul style={{ paddingLeft: '20px' }}>
+                    <ul style={{ paddingLeft: '0', listStyle: 'none' }}>
                         {day.how.map((step, i) => (
-                            <li key={i} style={{ marginBottom: '8px' }}>{step}</li>
+                            <li key={i} style={{
+                                marginBottom: '12px',
+                                padding: '12px 16px',
+                                backgroundColor: 'var(--bg)',
+                                borderRadius: '8px',
+                                display: 'flex',
+                                gap: '12px',
+                                alignItems: 'center'
+                            }}>
+                                <span style={{ fontWeight: 800, color: 'var(--accent)', opacity: 0.5 }}>{i + 1}</span>
+                                <span style={{ fontSize: '0.95rem' }}>{step}</span>
+                            </li>
                         ))}
                     </ul>
                 </section>
 
                 {/* Deliverable Section */}
-                <section className="card" style={{ backgroundColor: '#f0f9ff', border: '1px solid #bae6fd' }}>
+                <section className="card" style={{ backgroundColor: '#f0f9ff', border: '1px solid #bae6fd', boxShadow: '0 10px 15px -3px rgba(186, 230, 253, 0.2)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#0369a1' }}>
-                            <Send size={20} />
+                            <div style={{ padding: '8px', backgroundColor: '#e0f2fe', borderRadius: '8px' }}>
+                                <Send size={20} />
+                            </div>
                             <h3 style={{ margin: 0 }}>Deliverable</h3>
                         </div>
                         {day.deliverable.ai_allowed ? (
-                            <span className="badge" style={{ backgroundColor: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd' }}>
-                                <Sparkles size={12} style={{ marginRight: '4px' }} /> AI Allowed
+                            <span className="badge" style={{ backgroundColor: '#e0f2fe', color: '#0369a1', borderColor: '#bae6fd', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                                <Sparkles size={14} /> AI Allowed
                             </span>
                         ) : (
-                            <span className="badge">AI Not Allowed</span>
+                            <span className="badge" style={{ backgroundColor: '#f1f5f9', color: '#64748b' }}>AI Not Allowed</span>
                         )}
                     </div>
-                    <h4 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>{day.deliverable.title}</h4>
-                    <p style={{ color: '#0c4a6e', fontSize: '0.95rem' }}>{day.deliverable.instructions}</p>
+                    <div style={{ padding: '24px', backgroundColor: 'white', borderRadius: '12px', border: '1px solid #e0f2fe' }}>
+                        <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#0c4a6e' }}>{day.deliverable.title}</h4>
+                        <p style={{ color: '#334155', fontSize: '1rem', lineHeight: 1.6, margin: 0 }}>{day.deliverable.instructions}</p>
+                    </div>
 
-                    <div style={{ marginTop: '20px', paddingTop: '16px', borderTop: '1px solid #bae6fd' }}>
-                        <h5 style={{ fontSize: '0.8rem', textTransform: 'uppercase', color: '#0369a1', marginBottom: '8px' }}>Submission Tip</h5>
-                        <p style={{ margin: 0, fontSize: '0.85rem', color: '#0369a1' }}>
-                            Use the standard email subject format and include all required fields.
-                        </p>
+                    <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', color: '#0369a1', fontSize: '0.9rem' }}>
+                        <Info size={16} />
+                        <span>Submission: {data.course.submission_method.email_conventions.subject_format.replace('{day_number}', day.day_number).replace('{deliverable_title}', day.deliverable.title)}</span>
                     </div>
                 </section>
             </div>
