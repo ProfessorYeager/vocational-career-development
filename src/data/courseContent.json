@@ -191,7 +191,7 @@
                     "deliverable": {
                         "title": "Digital Professionalism Checklist",
                         "type": "checklist",
-                        "instructions": "Complete the checklist and include one improvement action you will take this month.",
+                        "instructions": "Audit yourself against these 5 items: (1) Google Search: Is your public presence professional? (2) Profile Photos: Is your current avatar workplace-appropriate? (3) Privacy Settings: Are personal posts hidden from the public? (4) Email Handle: Is it a professional version of your name? (5) Bio/About: Does it reflect your career goals? Submit a 'Pass/Fail' for each and describe one specific action to improve (e.g., 'Update my LinkedIn photo' or 'Change my Instagram to private').",
                         "ai_allowed": false,
                         "ai_disclosure_required": false
                     }
@@ -227,7 +227,7 @@
                     "deliverable": {
                         "title": "Process Steps Document",
                         "type": "process_doc",
-                        "instructions": "Write 6–10 steps explaining a simple process in your field (e.g., oil change workflow or patient intake steps).",
+                        "instructions": "Exemplar Structure: (1) Goal. (2) Safety/Prep. (3) Sequence (Steps 1-8). (4) Verification/Clean-up. Write 6–10 detailed steps for a core task. Example: 'How to perform a multi-point inspection' or 'How to prepare a room for patient intake'. Avoid vague steps like 'do it'; use actionable verbs like 'inspect', 'sanitize', or 'tighten'.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -329,7 +329,7 @@
                     "deliverable": {
                         "title": "Credential Plan (Draft)",
                         "type": "plan",
-                        "instructions": "List the credentials/training you need and where you could get them (school, cert body, employer training).",
+                        "instructions": "List 3 specific credentials. Example (Auto): ASE G1 Inspection, Ford/Toyota Factory Certs. Example (Medical): National Certified Medical Assistant (NCMA), CPR/BLS, Phlebotomy Tech. For each, list (1) the Cert Name, (2) Who provides it, and (3) one requirement to earn it (e.g., '2 years experience' or 'pass a 50-question exam').",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -346,7 +346,7 @@
                     "deliverable": {
                         "title": "Career Pathway Map (Draft)",
                         "type": "map",
-                        "instructions": "Submit a pathway map with at least 4 steps and approximate timeframes.",
+                        "instructions": "Create a 4-step map. Exemplar: Step 1: Complete CTE Program (Next 6 months). Step 2: Earn NCMA or ASE cert (End of year 1). Step 3: Entry Role as Tech/MA at [Specific Local Employer] (Year 2). Step 4: Lead Tech/Admin Role (Year 5). Include approximate months/years for each step.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -429,7 +429,7 @@
                     "deliverable": {
                         "title": "Barriers & Strategies",
                         "type": "reflection",
-                        "instructions": "List 3 barriers + 3 strategies tied to your plan.",
+                        "instructions": "Identify 3 realistic obstacles (e.g., 'Transportation to my first job', 'Cost of certification exams', 'Lack of work experience'). For each, provide a 'If/Then' strategy. Exemplar: 'If I can't afford the ASE exam, then I will research employer-sponsored testing or apply for a school grant.'",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -478,7 +478,7 @@
                     "deliverable": {
                         "title": "Resume Info Collection",
                         "type": "worksheet",
-                        "instructions": "Submit a filled info sheet: experience, skills, certifications, education, references (if applicable).",
+                        "instructions": "Collect details for these categories: (1) Technical Skills: Brake lathes, scan tools, patient vitals, medical software. (2) Soft Skills: Punctuality, documentation, team communication. (3) Experience: Work history, volunteer work, or CTE lab projects. (4) Certs: OSHA 10, CPR, ASE. Submit these in a list to use for your resume tomorrow.",
                         "ai_allowed": false,
                         "ai_disclosure_required": false
                     }
@@ -606,7 +606,7 @@
                     "deliverable": {
                         "title": "Elevator Pitch (Written)",
                         "type": "script",
-                        "instructions": "Submit your written elevator pitch (20–30 seconds spoken).",
+                        "instructions": "Use this template: 'Hi, I'm [Name] and I'm a student in the VCD [Program] track. I've developed skills in [Skill 1] and [Skill 2], and I'm currently working toward my [Cert] certification. I'm passionate about [Industry Goal] and am looking for an opportunity to contribute to a team as a [Target Role].' Submit your 20–30 second script.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -638,7 +638,7 @@
                     "deliverable": {
                         "title": "Interview Answers Outline",
                         "type": "outline",
-                        "instructions": "Outline answers for these 3 common questions: (1) 'Tell me about yourself (include your VCD progress)' (2) 'What are your top 3 technical strengths?' (3) 'Why do you want to work in this industry?'",
+                        "instructions": "Context: Employers ask these to see if you are prepared and reliable. (1) 'Tell me about yourself': Focus on your training and one specific technical project. (2) 'Top 3 strengths': Choose skills like 'Attention to detail in brake systems' or 'Accuracy in patient vitals'. (3) 'Why this industry': Express your long-term commitment. Outline clear, 3-sentence responses for each.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -720,7 +720,7 @@
                     "deliverable": {
                         "title": "Portfolio Link/Structure",
                         "type": "link_or_screenshot",
-                        "instructions": "Submit a link to your folder structure or a screenshot showing organized career documents.",
+                        "instructions": "Exemplar Naming: '01_Resume_LastName.pdf', '02_CoverLetter_LastName.pdf', '03_PathwayMap_LastName.pdf'. Organize your work into a folder named 'VCD_CareerPortfolio_LastName'. Submit the link or a screenshot showing this structure.",
                         "ai_allowed": false,
                         "ai_disclosure_required": false
                     }
@@ -864,7 +864,7 @@
                     "deliverable": {
                         "title": "Business Plan Draft",
                         "type": "document",
-                        "instructions": "Submit your one-page business plan draft using the template headings.",
+                        "instructions": "Exemplar: Problem: 'Many local car owners can't get an oil change on weekends.' Solution: 'Weekend-only mobile lube service.' Customer: 'Busy professionals/families.' Marketing: 'Facebook groups and flyer drops.' Use the template at the bottom of the page (Problem, customer, solution...) and fill in 2-3 sentences per section.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -911,7 +911,7 @@
                     "deliverable": {
                         "title": "Marketing Message",
                         "type": "copy",
-                        "instructions": "Write a short marketing message for your business (3–6 sentences).",
+                        "instructions": "Exemplar: 'Tired of waiting in diagnostic lines? [Business Name] provides mobile brake diagnostics that come to you. Professional service, transparent pricing, and weekend availability. Contact us today for a quotes.' Write a similar 3-6 sentence message for your specific business idea.",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
@@ -927,7 +927,7 @@
                     "deliverable": {
                         "title": "Customer Experience Standard",
                         "type": "list",
-                        "instructions": "List 5 customer experience standards your business will follow.",
+                        "instructions": "List 5 standards. Exemplar: (1) 'We will respond to all quotes within 2 hours.' (2) 'We will maintain a clean and organized workspace.' (3) 'We will explain all technical issues in plain English to customers.' (4) 'We will follow up 48 hours after service.' (5) 'We will offer a satisfaction guarantee on all labor.'",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
