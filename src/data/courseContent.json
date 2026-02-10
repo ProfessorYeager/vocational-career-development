@@ -342,6 +342,13 @@
                         "Identify required skills and common employers.",
                         "Verify at least one detail using a second source."
                     ],
+                    "resources": [
+                        {
+                            "title": "Understanding Career Progression",
+                            "url": "https://www.indeed.com/career-advice/career-development/career-progression",
+                            "description": "How to plan your career growth."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Career Ladder Notes",
                         "type": "notes",
@@ -358,6 +365,18 @@
                     "how": [
                         "Research typical requirements for your target role.",
                         "Discuss verification: AI can be wrong—confirm with credible sources."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Automotive Certifications Guide (ASE)",
+                            "url": "https://www.ase.com/test-series",
+                            "description": "Official list of ASE certification tests."
+                        },
+                        {
+                            "title": "Medical Assistant Certifications (NHA)",
+                            "url": "https://www.nhanow.com/certification/nha-certifications/medical-assistant-ccma",
+                            "description": "Guide to the CCMA credential."
+                        }
                     ],
                     "deliverable": {
                         "title": "Credential Plan (Draft)",
@@ -392,6 +411,13 @@
                     "how": [
                         "Draft 1 page max: goal, why, plan, next steps.",
                         "AI allowed for drafting; student must revise."
+                    ],
+                    "resources": [
+                        {
+                            "title": "SMART Goals for Students",
+                            "url": "https://www.purdueglobal.edu/blog/student-life/smart-goals-for-students/",
+                            "description": "How to set achievable career goals."
+                        }
                     ],
                     "deliverable": {
                         "title": "Career Goal Statement (Draft)",
@@ -476,6 +502,13 @@
                         "Draft a professional outreach message.",
                         "Practice tone and clarity."
                     ],
+                    "resources": [
+                        {
+                            "title": "How to Write a Networking Email",
+                            "url": "https://www.hubspot.com/sales/networking-email",
+                            "description": "Templates for reaching out to professionals."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Professional Outreach Draft",
                         "type": "message_draft",
@@ -524,6 +557,13 @@
                     "how": [
                         "Create sections: summary, skills, experience, education, certs.",
                         "AI allowed to rephrase bullets; student verifies truth."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Harvard Resume & Cover Letter Guide",
+                            "url": "https://careerservices.fas.harvard.edu/resources/bullet-point-resume-template/",
+                            "description": "Gold standard for resume formatting and content."
+                        }
                     ],
                     "deliverable": {
                         "title": "Resume Outline",
@@ -604,6 +644,13 @@
                     "how": [
                         "Review template; identify what changes vs stays constant."
                     ],
+                    "resources": [
+                        {
+                            "title": "How to Write a Cover Letter",
+                            "url": "https://www.glassdoor.com/blog/guide/how-to-write-a-cover-letter/",
+                            "description": "Step-by-step guide with examples."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Cover Letter Template (Draft)",
                         "type": "document",
@@ -636,6 +683,13 @@
                     "how": [
                         "Draft pitch; focus on clarity, confidence, and relevance."
                     ],
+                    "resources": [
+                        {
+                            "title": "Elevator Pitch Examples for Students",
+                            "url": "https://www.indeed.com/career-advice/interviewing/elevator-pitch-examples-for-students",
+                            "description": "Scripts for introducing yourself professionally."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Elevator Pitch (Written)",
                         "type": "script",
@@ -667,6 +721,13 @@
                     "why": "Interviews are a skill; preparation reduces anxiety.",
                     "how": [
                         "Discuss common questions; draft answer outlines."
+                    ],
+                    "resources": [
+                        {
+                            "title": "50 Common Interview Questions",
+                            "url": "https://www.themuse.com/advice/interview-questions-and-answers",
+                            "description": "Top questions asked by employers."
+                        }
                     ],
                     "deliverable": {
                         "title": "Interview Answers Outline",
@@ -750,6 +811,13 @@
                     "how": [
                         "Create a folder or drive structure; organize artifacts."
                     ],
+                    "resources": [
+                        {
+                            "title": "Student Portfolio Guide",
+                            "url": "https://www.canva.com/learn/digital-portfolio/",
+                            "description": "How to organize and display your work."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Portfolio Link/Structure",
                         "type": "link_or_screenshot",
@@ -798,6 +866,13 @@
                     "how": [
                         "Scenario responses; professional phrasing practice."
                     ],
+                    "resources": [
+                        {
+                            "title": "Conflict Resolution in the Workplace",
+                            "url": "https://www.mindtools.com/pages/article/newLDR_81.htm",
+                            "description": "Strategies for handling difficult conversations."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Scenario Response (Conflict)",
                         "type": "short_response",
@@ -830,6 +905,13 @@
                     "how": [
                         "Examples of businesses; discuss value proposition."
                     ],
+                    "resources": [
+                        {
+                            "title": "Young Entrepreneurs Guide",
+                            "url": "https://www.sba.gov/business-guide",
+                            "description": "Official guide to starting a business from SBA.gov."
+                        }
+                    ],
                     "deliverable": {
                         "title": "Business Idea (Field-Specific)",
                         "type": "idea",
@@ -845,6 +927,13 @@
                     "why": "Understanding basics improves employability and leadership readiness.",
                     "how": [
                         "Mini-lesson + examples; map simple business flow."
+                    ],
+                    "resources": [
+                        {
+                            "title": "How Businesses Work (Investopedia)",
+                            "url": "https://www.investopedia.com/articles/basics/11/3-s-simple-business.asp",
+                            "description": "Basics of business operations."
+                        }
                     ],
                     "deliverable": {
                         "title": "Business Operations Paragraph",
@@ -893,6 +982,13 @@
                     "why": "Planning clarifies viability and execution steps.",
                     "how": [
                         "Use template: problem, customer, solution, operations, costs, marketing, AI support."
+                    ],
+                    "resources": [
+                        {
+                            "title": "One-Page Business Plan Template",
+                            "url": "https://www.100startup.com/resources/business-plan/",
+                            "description": "Simple template for drafting your idea."
+                        }
                     ],
                     "deliverable": {
                         "title": "Business Plan Draft",
