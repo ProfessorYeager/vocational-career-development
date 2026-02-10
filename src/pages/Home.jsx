@@ -9,56 +9,16 @@ const Home = () => {
     return (
         <div className="container">
             {/* Hero Section */}
-            <section className="card" style={{
-                padding: 0,
-                overflow: 'hidden',
-                border: 'none',
-                position: 'relative',
-                marginBottom: '40px',
-                boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)'
-            }}>
-                <div style={{
-                    height: '320px',
-                    background: 'linear-gradient(135deg, #0284c7 0%, #0d9488 100%)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center',
-                    padding: '60px',
-                    position: 'relative',
-                    overflow: 'hidden'
-                }}>
+            <section className="card hero-card">
+                <div className="hero-content">
                     {/* Abstract decorative elements */}
-                    <div style={{
-                        position: 'absolute',
-                        top: '-20%',
-                        right: '-10%',
-                        width: '400px',
-                        height: '400px',
-                        background: 'rgba(255,255,255,0.1)',
-                        borderRadius: '50%',
-                    }}></div>
-                    <div style={{
-                        position: 'absolute',
-                        bottom: '-10%',
-                        left: '20%',
-                        width: '200px',
-                        height: '200px',
-                        background: 'rgba(255,255,255,0.05)',
-                        borderRadius: '50%',
-                    }}></div>
+                    <div className="hero-circle-1"></div>
+                    <div className="hero-circle-2"></div>
 
-                    <div style={{ position: 'relative', zIndex: 1 }}>
-                        <span style={{
-                            color: 'rgba(255,255,255,0.9)',
-                            textTransform: 'uppercase',
-                            fontSize: '0.8rem',
-                            fontWeight: 800,
-                            letterSpacing: '0.1em',
-                            marginBottom: '12px',
-                            display: 'block'
-                        }}>Professional Readiness Program</span>
-                        <h1 style={{ color: 'white', fontSize: '3rem', fontWeight: 800, marginBottom: '12px', lineHeight: 1.1 }}>{site.title}</h1>
-                        <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '1.2rem', maxWidth: '600px' }}>{site.subtitle}</p>
+                    <div className="hero-text-container">
+                        <span className="hero-label">Professional Readiness Program</span>
+                        <h1 className="hero-title">{site.title}</h1>
+                        <p className="hero-subtitle">{site.subtitle}</p>
                     </div>
                 </div>
             </section>
