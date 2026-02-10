@@ -8,7 +8,7 @@ import Artifacts from './pages/Artifacts';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/vocational-career-development">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
