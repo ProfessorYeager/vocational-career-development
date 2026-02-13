@@ -141,7 +141,16 @@ const DayView = () => {
                     </div>
                     <div style={{ padding: '24px', backgroundColor: 'white', borderRadius: '12px', border: '1px solid #e0f2fe' }}>
                         <h4 style={{ fontSize: '1.2rem', marginBottom: '12px', color: '#0c4a6e' }}>{day.deliverable.title}</h4>
-                        <p style={{ color: '#334155', fontSize: '1rem', lineHeight: 1.6, margin: 0 }}>{day.deliverable.instructions}</p>
+                        <div style={{ color: '#334155', fontSize: '1rem', lineHeight: 1.6, margin: 0 }}>
+                            {day.deliverable.instructions.split(/<br\s*\/?>/i).map((line, i) => (
+                                <React.Fragment key={i}>
+                                    {line.split('**').map((part, j) => (
+                                        j % 2 === 1 ? <strong key={j}>{part}</strong> : part
+                                    ))}
+                                    {i < day.deliverable.instructions.split(/<br\s*\/?>/i).length - 1 && <br />}
+                                </React.Fragment>
+                            ))}
+                        </div>
                     </div>
 
                     <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', color: '#0369a1', fontSize: '0.9rem' }}>

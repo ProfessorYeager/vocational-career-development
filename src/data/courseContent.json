@@ -277,7 +277,7 @@
                     "deliverable": {
                         "title": "Scenario Response (Channel Choice)",
                         "type": "short_response",
-                        "instructions": "Choose ONE scenario -> (1) **Urgent:** You are stuck in unexpected traffic and will be 15 minutes late to the shop/clinic. (2) **Formal:** You need to request 3 days off for a family wedding that is two months away. (3) **Sensitive:** You accidentally broke a small piece of equipment and need to tell your supervisor. <br><br> TASK: Write the actual message/script you would use and explain WHY you chose that channel (Text, Email, or In-Person).",
+                        "instructions": "Choose ONE scenario -> <br>(1) **Urgent:** You are stuck in unexpected traffic and will be 15 minutes late to the shop/clinic. <br>(2) **Formal:** You need to request 3 days off for a family wedding that is two months away. <br>(3) **Sensitive:** You accidentally broke a small piece of equipment and need to tell your supervisor. <br><br> TASK: Write the actual message/script you would use and explain WHY you chose that channel (Text, Email, or In-Person).",
                         "ai_allowed": true,
                         "ai_disclosure_required": true
                     }
