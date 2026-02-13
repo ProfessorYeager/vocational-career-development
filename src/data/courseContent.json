@@ -27,7 +27,7 @@
             },
             "email_conventions": {
                 "to": "[INSTRUCTOR_EMAIL]",
-                "subject_format": "[CTE Career Dev] Day {day_number} - {deliverable_title} - {LASTNAME}, {FIRSTNAME}",
+                "subject_format": "Day {day_number} - {lesson_name}",
                 "body_required_fields": [
                     "Student Name",
                     "Program (Automotive or Medical Assisting)",

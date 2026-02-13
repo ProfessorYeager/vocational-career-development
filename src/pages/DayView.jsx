@@ -146,7 +146,7 @@ const DayView = () => {
 
                     <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', color: '#0369a1', fontSize: '0.9rem' }}>
                         <Info size={16} />
-                        <span>Submission: {data.course.submission_method.email_conventions.subject_format.replace('{day_number}', day.day_number).replace('{deliverable_title}', day.deliverable.title)}</span>
+                        <span>Submission: Email your instructor your completed deliverable with the subject "{data.course.submission_method.email_conventions.subject_format.replace('{day_number}', day.day_number).replace('{lesson_name}', day.title)}"</span>
                     </div>
                 </section>
             </div>
