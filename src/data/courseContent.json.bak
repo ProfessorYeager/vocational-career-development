@@ -1,0 +1,1313 @@
+{
+    "site": {
+        "title": "Vocational Career Development (VCD)",
+        "subtitle": "Professional readiness and digital literacy for high school technical programs.",
+        "audience": [
+            "CTE Students",
+            "Automotive",
+            "Medical Assisting"
+        ],
+        "timezone": "America/New_York",
+        "meeting_days": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+        ],
+        "duration_days": 60
+    },
+    "course": {
+        "grading_model": "Pass/Fail",
+        "submission_method": {
+            "type": "email",
+            "rules": {
+                "send_same_day": true,
+                "late_policy": "Late submissions accepted only as make-up work during designated Make-Up Days or by instructor approval.",
+                "co_op_absence_policy": "Co-op absences do not excuse deliverables. Students complete deliverables independently and email the same day or next available opportunity per Make-Up rules."
+            },
+            "email_conventions": {
+                "to": "[INSTRUCTOR_EMAIL]",
+                "subject_format": "[CTE Career Dev] Day {day_number} - {deliverable_title} - {LASTNAME}, {FIRSTNAME}",
+                "body_required_fields": [
+                    "Student Name",
+                    "Program (Automotive or Medical Assisting)",
+                    "Day Number",
+                    "Deliverable Title",
+                    "AI Use Disclosure (Yes/No + how used)",
+                    "Link/Attachment (if applicable)"
+                ],
+                "attachments_allowed": true,
+                "links_allowed": true
+            }
+        },
+        "ai_policy": {
+            "stance": "AI is allowed and expected as a workplace tool, with disclosure and accountability.",
+            "rules": [
+                "AI is a tool, not a replacement for thinking.",
+                "Students are responsible for accuracy and must verify claims when needed.",
+                "Students must be able to explain their work.",
+                "AI may help prepare; students must perform key demonstrations live (e.g., elevator pitch, mock interview).",
+                "Undisclosed AI use or misrepresentation of understanding may result in a non-passing status for the deliverable."
+            ],
+            "disclosure_requirement": true,
+            "disclosure_prompt": "If you used AI today, describe exactly how you used it (1–3 sentences) and what you changed after reviewing it."
+        },
+        "required_competencies": [
+            {
+                "name": "Digital Literacy",
+                "description": "Professional digital communication, file management habits, digital footprint awareness, safe/ethical tech use."
+            },
+            {
+                "name": "Career Exploration",
+                "description": "Clear career direction in chosen field, role progression understanding, training/certification plan."
+            },
+            {
+                "name": "Career Readiness",
+                "description": "Resume + cover letter templates, elevator pitch, mock interview participation, readiness behaviors."
+            },
+            {
+                "name": "Entrepreneurship",
+                "description": "Business fundamentals and ability to draft a one-page business plan related to the field."
+            },
+            {
+                "name": "Safety",
+                "description": "OSHA 10 completion verified."
+            }
+        ],
+        "pass_requirements": {
+            "must_complete_all_required_artifacts": true,
+            "required_artifacts": [
+                "Digital Professionalism Checklist",
+                "Professional Email Task",
+                "AI Ethics Reflection",
+                "Career Pathway Map",
+                "Education/Certification Plan",
+                "Career Goal Statement",
+                "Resume (Final)",
+                "Cover Letter Template",
+                "Elevator Pitch (Written + Delivered)",
+                "Mock Interview Participation",
+                "One-Page Business Plan",
+                "OSHA 10 Completion Verification"
+            ]
+        }
+    },
+    "units": [
+        {
+            "unit_id": "U1",
+            "title": "Digital Literacy, Professionalism & AI Foundations",
+            "day_range": {
+                "start": 1,
+                "end": 10
+            },
+            "outcomes": [
+                "Students communicate professionally via email and digital tools.",
+                "Students understand digital footprint and workplace expectations.",
+                "Students understand basic AI concepts and ethical, responsible use."
+            ],
+            "days": [
+                {
+                    "day_number": 1,
+                    "title": "Digital Professionalism in 2026",
+                    "what": "Define digital professionalism and workplace expectations in Automotive and Medical Assisting.",
+                    "why": "Employers judge professionalism before technical skill; it impacts hiring and retention.",
+                    "how": [
+                        "Review examples of professional vs unprofessional digital behavior.",
+                        "Discuss workplace expectations: responsiveness, tone, documentation.",
+                        "Create a personal baseline checklist."
+                    ],
+                    "resources": [
+                        {
+                            "title": "What is a Digital Footprint?",
+                            "url": "https://www.rasmussen.edu/student-experience/college-life/what-is-digital-footprint/",
+                            "description": "A student guide to understanding and managing your online history."
+                        },
+                        {
+                            "title": "Gen Z Gets Career Guidance on Social Media",
+                            "url": "https://asacareernav.jff.org/gen-z-gets-career-guidance-on-social-media/",
+                            "description": "How to leverage social media for career growth."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Professional Email Response (Draft)",
+                        "type": "email_draft",
+                        "instructions": "Scenario: You are running 15 minutes late for your shift because of unexpected traffic. Write a short professional email to your supervisor (Mr. Jones) explaining the situation and your ETAs. Keep it clear, polite, and complete.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 2,
+                    "title": "Professional Email Writing",
+                    "what": "Write clear emails with correct subject lines, tone, structure, and next steps.",
+                    "why": "Email is still a primary workplace tool and a common cause of miscommunication.",
+                    "how": [
+                        "Mini-lesson: subject lines, greeting, purpose, ask, close.",
+                        "Rewrite a poorly written email into a professional one.",
+                        "Optional AI: generate draft, then revise for accuracy and tone."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Email Etiquette for Students (Purdue OWL)",
+                            "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/email_etiquette.html",
+                            "description": "The gold standard guide for professional and academic emails."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Rewritten Professional Email",
+                        "type": "email_draft",
+                        "instructions": "Rewrite the following ‘bad email’ into a professional version: 'hey i cant come in today my car is trippin see ya tomorrow.' Your professional version should include a subject line, proper greeting, clear reason, and a professional closing.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 3,
+                    "title": "AI Basics: What It Is / Isn’t",
+                    "what": "Understand AI capabilities and limitations (errors, confidence without truth, outdated info).",
+                    "why": "Students will use AI at work; misuse creates safety and credibility risks.",
+                    "how": [
+                        "Define AI in plain language.",
+                        "Compare: good AI output vs flawed AI output.",
+                        "Practice: Ask AI 'What are the required oil change intervals for a 2024 Toyota Camry?' then verify this using the official Toyota owner's manual (available on Toyota.com)."
+                    ],
+                    "resources": [
+                        {
+                            "title": "ChatGPT: Five Uses for Business with Ethics",
+                            "url": "https://wearetechwomen.com/chatgpt-five-uses-for-business-with-ethics/",
+                            "description": "Understanding ethical AI applications in the workplace."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "AI Use Case in My Field",
+                        "type": "short_response",
+                        "instructions": "In 5–7 sentences, explain one realistic way AI could support work in your field AND one risk if used incorrectly.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 4,
+                    "title": "AI Ethics & Responsible Use",
+                    "what": "Identify ethical vs unethical AI use in school and workplace contexts.",
+                    "why": "Ethics, privacy, and safety matter—especially in healthcare and technical trades.",
+                    "how": [
+                        "Scenario sort: ethical / questionable / unacceptable.",
+                        "Discuss privacy: patient info, employer data, proprietary procedures.",
+                        "Create personal AI boundaries for this course."
+                    ],
+                    "deliverable": {
+                        "title": "AI Ethics Reflection",
+                        "type": "reflection",
+                        "instructions": "Review these scenarios: (A) Using AI to research how a specific engine component works. (B) Using AI to write a patient summary without checking the facts. (C) Using AI to generate a template for a cover letter and then adding your own details. Reflect on which are ethical and why. Then answer: (1) When is AI use appropriate? (2) When is it not? (3) What will you do to stay accountable?",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 5,
+                    "title": "Digital Footprint & Professional Identity",
+                    "what": "Understand digital footprint and how employers evaluate candidates online.",
+                    "why": "Digital footprint can block opportunities even when skills are strong.",
+                    "how": [
+                        "Self-audit using checklist.",
+                        "Discuss privacy settings and professional presence.",
+                        "Plan one concrete improvement action."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Take Control of What Your Online Presence Says About You",
+                            "url": "https://www.entrepreneur.com/starting-a-business/take-control-of-what-your-online-presence-says-about-you/490913",
+                            "description": "Why your digital reputation matters for business and career."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Digital Professionalism Checklist",
+                        "type": "checklist",
+                        "instructions": "Audit yourself against these 5 items: (1) Google Search: Is your public presence professional? (2) Profile Photos: Is your current avatar workplace-appropriate? (3) Privacy Settings: Are personal posts hidden from the public? (4) Email Handle: Is it a professional version of your name? (5) Bio/About: Does it reflect your career goals? Submit a 'Pass/Fail' for each and describe one specific action to improve (e.g., 'Update my LinkedIn photo' or 'Change my Instagram to private').",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 6,
+                    "title": "Unit 1 Workday: Fix & Complete",
+                    "what": "Complete any missing Unit 1 artifacts and revise quality issues.",
+                    "why": "Pass/Fail requires completion and professional quality.",
+                    "how": [
+                        "Students review a Unit 1 artifact tracker.",
+                        "Independent work + instructor check-ins.",
+                        "Resubmit improved artifacts if needed."
+                    ],
+                    "deliverable": {
+                        "title": "Unit 1 Status Email",
+                        "type": "status_update",
+                        "instructions": "Email: list which Unit 1 deliverables are complete and which are still missing (if any).",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 7,
+                    "title": "Workplace Tools & File Habits",
+                    "what": "Basic workplace file organization and documentation habits.",
+                    "why": "Lost files and poor documentation cost time, money, and credibility.",
+                    "how": [
+                        "Create a standard folder structure.",
+                        "Name files professionally.",
+                        "Document a simple process in steps."
+                    ],
+                    "deliverable": {
+                        "title": "Process Steps Document",
+                        "type": "process_doc",
+                        "instructions": "Exemplar Structure: (1) Goal. (2) Safety/Prep. (3) Sequence (Steps 1-8). (4) Verification/Clean-up. Write 6–10 detailed steps for a core task. Example: 'How to perform a multi-point inspection' or 'How to prepare a room for patient intake'. Avoid vague steps like 'do it'; use actionable verbs like 'inspect', 'sanitize', or 'tighten'.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 8,
+                    "title": "Digital Communication: Text vs Email vs In-Person",
+                    "what": "Choose the right channel for the right message.",
+                    "why": "Wrong channel creates conflict and misunderstandings at work.",
+                    "how": [
+                        "Given scenarios, decide best communication method.",
+                        "Write one message in the correct channel style."
+                    ],
+                    "deliverable": {
+                        "title": "Scenario Response (Channel Choice)",
+                        "type": "short_response",
+                        "instructions": "Pick one scenario and write the correct response (email or message) + one sentence explaining why that channel fits.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 9,
+                    "title": "Unit 1 Verification Check",
+                    "what": "Finalize Unit 1 artifacts and verify pass status.",
+                    "why": "Clear checkpoints prevent end-of-year failures.",
+                    "how": [
+                        "Checklist review.",
+                        "Students correct missing items.",
+                        "Instructor verifies completion."
+                    ],
+                    "deliverable": {
+                        "title": "Unit 1 Completion Confirmation",
+                        "type": "confirmation",
+                        "instructions": "Email: confirm completion of all Unit 1 deliverables and attach/link anything missing previously.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 10,
+                    "title": "Transition Day: Career Exploration Launch",
+                    "what": "Introduce career exploration and build momentum.",
+                    "why": "Direction drives effort and persistence.",
+                    "how": [
+                        "Define ‘career ladder’ and typical role progression in each field.",
+                        "Start role research with verification expectations."
+                    ],
+                    "deliverable": {
+                        "title": "3 Roles in My Field",
+                        "type": "list",
+                        "instructions": "List 3 roles (entry, mid, advanced) in your field with 1 sentence each describing what they do.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                }
+            ]
+        },
+        {
+            "unit_id": "U2",
+            "title": "Career Exploration & AI-Informed Planning",
+            "day_range": {
+                "start": 11,
+                "end": 25
+            },
+            "outcomes": [
+                "Students identify realistic roles and pathways in their field.",
+                "Students build an education/certification plan.",
+                "Students can use AI for research while verifying information."
+            ],
+            "days": [
+                {
+                    "day_number": 11,
+                    "title": "Career Ladder Deep Dive",
+                    "what": "Explore role progression and what increases pay/responsibility.",
+                    "why": "Students need a real plan beyond ‘get a job’.",
+                    "how": [
+                        "Role research by program.",
+                        "Identify required skills and common employers.",
+                        "Verify at least one detail using a second source."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Understanding Career Progression",
+                            "url": "https://www.indeed.com/career-advice/career-development/career-progression",
+                            "description": "How to plan your career growth."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Career Ladder Notes",
+                        "type": "notes",
+                        "instructions": "Research this sample ladder for your field: (1) Lube Technician -> Lead Tech -> Shop Manager OR (2) Medical Assistant -> Senior MA -> Clinic Coordinator. Submit 3-5 sentences on what skills or certs are needed for the 'Lead' or 'Senior' role.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 12,
+                    "title": "Training Paths & Credentials",
+                    "what": "Identify training routes (certs, licenses, degrees, apprenticeships).",
+                    "why": "Wrong path wastes time and money.",
+                    "how": [
+                        "Research typical requirements for your target role.",
+                        "Discuss verification: AI can be wrong—confirm with credible sources."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Automotive Certifications Guide (ASE)",
+                            "url": "https://www.ase.com/test-series",
+                            "description": "Official list of ASE certification tests."
+                        },
+                        {
+                            "title": "Medical Assistant Certifications (NHA)",
+                            "url": "https://www.nhanow.com/certification/nha-certifications/medical-assistant-ccma",
+                            "description": "Guide to the CCMA credential."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Credential Plan (Draft)",
+                        "type": "plan",
+                        "instructions": "List 3 specific credentials. Example (Auto): ASE G1 Inspection, Ford/Toyota Factory Certs. Example (Medical): National Certified Medical Assistant (NCMA), CPR/BLS, Phlebotomy Tech. For each, list (1) the Cert Name, (2) Who provides it, and (3) one requirement to earn it (e.g., '2 years experience' or 'pass a 50-question exam').",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 13,
+                    "title": "Career Pathway Map",
+                    "what": "Map your career path from now to your target role.",
+                    "why": "A visible plan increases follow-through.",
+                    "how": [
+                        "Create a pathway map (bulleted, table, or diagram).",
+                        "Include timeline checkpoints."
+                    ],
+                    "deliverable": {
+                        "title": "Career Pathway Map (Draft)",
+                        "type": "map",
+                        "instructions": "Create a 4-step map. Exemplar: Step 1: Complete CTE Program (Next 6 months). Step 2: Earn NCMA or ASE cert (End of year 1). Step 3: Entry Role as Tech/MA at [Specific Local Employer] (Year 2). Step 4: Lead Tech/Admin Role (Year 5). Include approximate months/years for each step.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 14,
+                    "title": "Career Goal Statement",
+                    "what": "Write a clear, realistic goal statement.",
+                    "why": "Employers and mentors respond to clarity.",
+                    "how": [
+                        "Draft 1 page max: goal, why, plan, next steps.",
+                        "AI allowed for drafting; student must revise."
+                    ],
+                    "resources": [
+                        {
+                            "title": "SMART Goals for Students",
+                            "url": "https://www.purdueglobal.edu/blog/student-life/smart-goals-for-students/",
+                            "description": "How to set achievable career goals."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Career Goal Statement (Draft)",
+                        "type": "document",
+                        "instructions": "Use this template: 'My long-term goal is to become a [Role]. To get there, I will first earn my [Cert/License] within [Timeframe]. I will start by [Action 1] and [Action 2].' Submit 1 page max.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 15,
+                    "title": "Verification & Revision",
+                    "what": "Improve accuracy and realism of career research.",
+                    "why": "Planning only works if it’s true.",
+                    "how": [
+                        "Peer review + instructor feedback.",
+                        "Revise based on verification."
+                    ],
+                    "deliverable": {
+                        "title": "Career Artifacts (Revised Set)",
+                        "type": "bundle",
+                        "instructions": "Submit revised: pathway map + credential plan + goal statement.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 16,
+                    "title": "Co-op Flex Day: Catch-Up 1",
+                    "what": "Make-up and catch-up day for Unit 2 artifacts.",
+                    "why": "Co-op schedule requires flexible completion routes.",
+                    "how": [
+                        "Independent work time + check-ins."
+                    ],
+                    "deliverable": {
+                        "title": "Unit 2 Status Email",
+                        "type": "status_update",
+                        "instructions": "Email what’s completed and what is missing for Unit 2.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 17,
+                    "title": "Co-op Flex Day: Catch-Up 2",
+                    "what": "Finish any missing Unit 2 components.",
+                    "why": "Prevent backlog before Career Readiness unit.",
+                    "how": [
+                        "Independent completion + resubmission."
+                    ],
+                    "deliverable": {
+                        "title": "Missing Items Submission",
+                        "type": "makeup",
+                        "instructions": "Email any missing Unit 2 deliverables or corrected versions.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 18,
+                    "title": "Reality Check: Barriers & Solutions",
+                    "what": "Identify obstacles and build strategies to stay on track.",
+                    "why": "Plans fail without coping strategies.",
+                    "how": [
+                        "List top 3 barriers.",
+                        "Create 1 strategy per barrier."
+                    ],
+                    "deliverable": {
+                        "title": "Barriers & Strategies",
+                        "type": "reflection",
+                        "instructions": "Identify 3 realistic obstacles (e.g., 'Transportation to my first job', 'Cost of certification exams', 'Lack of work experience'). For each, provide a 'If/Then' strategy. Exemplar: 'If I can't afford the ASE exam, then I will research employer-sponsored testing or apply for a school grant.'",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 19,
+                    "title": "Professional Networking Basics",
+                    "what": "How to ask for help, mentorship, and opportunities.",
+                    "why": "Opportunities often come through people, not applications.",
+                    "how": [
+                        "Draft a professional outreach message.",
+                        "Practice tone and clarity."
+                    ],
+                    "resources": [
+                        {
+                            "title": "How to Write a Networking Email",
+                            "url": "https://www.hubspot.com/sales/networking-email",
+                            "description": "Templates for reaching out to professionals."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Professional Outreach Draft",
+                        "type": "message_draft",
+                        "instructions": "Write an outreach message using this structure: 'Hi [Name], I'm a student in the VCD program at [School]. I'm interested in [Field] and was wondering if you could share one piece of advice for someone starting out. Thank you, [Your Name].'",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 20,
+                    "title": "Unit 2 Verification Checkpoint",
+                    "what": "Confirm Unit 2 completion.",
+                    "why": "Checkpoint ensures readiness for resumes/interviews.",
+                    "how": [
+                        "Review tracker and submit any missing items."
+                    ],
+                    "deliverable": {
+                        "title": "Unit 2 Completion Confirmation",
+                        "type": "confirmation",
+                        "instructions": "Email confirming Unit 2 deliverables are complete; attach/link any missing items.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 21,
+                    "title": "Transition: Career Readiness Launch",
+                    "what": "Introduce resumes/cover letters/interviews.",
+                    "why": "Students need job-ready materials now.",
+                    "how": [
+                        "Review what employers look for and common mistakes."
+                    ],
+                    "deliverable": {
+                        "title": "Resume Info Collection",
+                        "type": "worksheet",
+                        "instructions": "Collect details for these categories: (1) Technical Skills: Brake lathes, scan tools, patient vitals, medical software. (2) Soft Skills: Punctuality, documentation, team communication. (3) Experience: Work history, volunteer work, or CTE lab projects. (4) Certs: OSHA 10, CPR, ASE. Submit these in a list to use for your resume tomorrow.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 22,
+                    "title": "Resume Structure",
+                    "what": "Build resume structure from student information.",
+                    "why": "A resume is a marketing document, not a biography.",
+                    "how": [
+                        "Create sections: summary, skills, experience, education, certs.",
+                        "AI allowed to rephrase bullets; student verifies truth."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Harvard Resume & Cover Letter Guide",
+                            "url": "https://careerservices.fas.harvard.edu/resources/bullet-point-resume-template/",
+                            "description": "Gold standard for resume formatting and content."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Resume Outline",
+                        "type": "outline",
+                        "instructions": "Submit a resume outline with headings and bullet placeholders.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 23,
+                    "title": "Resume Draft 1",
+                    "what": "Create first full resume draft.",
+                    "why": "Drafting early leaves time for revisions.",
+                    "how": [
+                        "Write draft; peer review for clarity and accuracy."
+                    ],
+                    "deliverable": {
+                        "title": "Resume Draft 1",
+                        "type": "document",
+                        "instructions": "Submit resume draft as doc/PDF or share link.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 24,
+                    "title": "Resume Revision",
+                    "what": "Improve resume impact using action verbs and measurable outcomes.",
+                    "why": "Strong bullets improve interview chances.",
+                    "how": [
+                        "Revise with feedback; optional AI to strengthen phrasing."
+                    ],
+                    "deliverable": {
+                        "title": "Resume Draft 2",
+                        "type": "document",
+                        "instructions": "Submit revised resume draft with at least 3 improved bullets.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 25,
+                    "title": "Resume Finalization Checkpoint",
+                    "what": "Lock a clean resume version.",
+                    "why": "Foundation for cover letters and interview prep.",
+                    "how": [
+                        "Final proofread and formatting check."
+                    ],
+                    "deliverable": {
+                        "title": "Resume Final (Checkpoint)",
+                        "type": "document",
+                        "instructions": "Submit your clean resume version (can be revised later, but this is your baseline).",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                }
+            ]
+        },
+        {
+            "unit_id": "U3",
+            "title": "Career Readiness: Resume, Cover Letter, Pitch & Interviews",
+            "day_range": {
+                "start": 26,
+                "end": 45
+            },
+            "outcomes": [
+                "Students have a final resume and reusable cover letter template.",
+                "Students deliver a clear elevator pitch.",
+                "Students participate in at least one mock interview."
+            ],
+            "days": [
+                {
+                    "day_number": 26,
+                    "title": "Cover Letter Purpose & Structure",
+                    "what": "Understand cover letter structure and tone.",
+                    "why": "A cover letter can differentiate candidates when experience is similar.",
+                    "how": [
+                        "Review template; identify what changes vs stays constant."
+                    ],
+                    "resources": [
+                        {
+                            "title": "How to Write a Cover Letter",
+                            "url": "https://www.glassdoor.com/blog/guide/how-to-write-a-cover-letter/",
+                            "description": "Step-by-step guide with examples."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Cover Letter Template (Draft)",
+                        "type": "document",
+                        "instructions": "Submit a reusable cover letter template with placeholders for job/company.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 27,
+                    "title": "Cover Letter Customization",
+                    "what": "Customize a cover letter to a specific job posting.",
+                    "why": "Employers want relevance, not generic letters.",
+                    "how": [
+                        "Use a sample job posting; customize letter."
+                    ],
+                    "deliverable": {
+                        "title": "Customized Cover Letter",
+                        "type": "document",
+                        "instructions": "Scenario: Apply for an 'Entry-Level Technician' or 'Medical Assistant I' role at 'City Systems'. The posting emphasizes 'punctuality, basic digital literacy, and a willingness to learn'. Customize your cover letter template for this specific role.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 28,
+                    "title": "Elevator Pitch Draft",
+                    "what": "Write a 20–30 second elevator pitch.",
+                    "why": "Introductions happen constantly in interviews and workplaces.",
+                    "how": [
+                        "Draft pitch; focus on clarity, confidence, and relevance."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Elevator Pitch Examples for Students",
+                            "url": "https://www.indeed.com/career-advice/interviewing/elevator-pitch-examples-for-students",
+                            "description": "Scripts for introducing yourself professionally."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Elevator Pitch (Written)",
+                        "type": "script",
+                        "instructions": "Use this template: 'Hi, I'm [Name] and I'm a student in the VCD [Program] track. I've developed skills in [Skill 1] and [Skill 2], and I'm currently working toward my [Cert] certification. I'm passionate about [Industry Goal] and am looking for an opportunity to contribute to a team as a [Target Role].' Submit your 20–30 second script.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 29,
+                    "title": "Elevator Pitch Practice",
+                    "what": "Practice delivering the pitch naturally.",
+                    "why": "Delivery matters as much as content.",
+                    "how": [
+                        "Practice in pairs; feedback on volume, pacing, confidence."
+                    ],
+                    "deliverable": {
+                        "title": "Pitch Reflection",
+                        "type": "reflection",
+                        "instructions": "Write 3 bullets: what went well, what to improve, what you will practice.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 30,
+                    "title": "Interview Basics",
+                    "what": "Common interview questions and what they are really asking.",
+                    "why": "Interviews are a skill; preparation reduces anxiety.",
+                    "how": [
+                        "Discuss common questions; draft answer outlines."
+                    ],
+                    "resources": [
+                        {
+                            "title": "50 Common Interview Questions",
+                            "url": "https://www.themuse.com/advice/interview-questions-and-answers",
+                            "description": "Top questions asked by employers."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Interview Answers Outline",
+                        "type": "outline",
+                        "instructions": "Context: Employers ask these to see if you are prepared and reliable. (1) 'Tell me about yourself': Focus on your training and one specific technical project. (2) 'Top 3 strengths': Choose skills like 'Attention to detail in brake systems' or 'Accuracy in patient vitals'. (3) 'Why this industry': Express your long-term commitment. Outline clear, 3-sentence responses for each.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 31,
+                    "title": "AI for Interview Prep (Ethical Use)",
+                    "what": "Use AI to practice interviews without faking experience.",
+                    "why": "AI can help rehearse, but authenticity must remain.",
+                    "how": [
+                        "Generate practice questions.",
+                        "Refine answers while staying truthful.",
+                        "Identify red-flag AI behaviors (over-polished, false claims)."
+                    ],
+                    "deliverable": {
+                        "title": "Interview Practice Log",
+                        "type": "log",
+                        "instructions": "Submit: 3 questions you practiced + improved answer notes (truthful).",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 32,
+                    "title": "Mock Interview Round 1",
+                    "what": "Complete a mock interview.",
+                    "why": "Practice builds confidence and real readiness.",
+                    "how": [
+                        "Interview rotations; feedback checklist."
+                    ],
+                    "deliverable": {
+                        "title": "Mock Interview Participation",
+                        "type": "participation",
+                        "instructions": "Roleplay Scenario: You are interviewing for a junior role. Have a peer or AI act as the interviewer (Mr. Green). They ask: 'Why should we hire you over someone with more experience?' Email a short summary of how you answered + one thing you'd change next time.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 33,
+                    "title": "Mock Interview Round 2 / Makeups",
+                    "what": "Second round or makeup interview.",
+                    "why": "Ensure all students complete requirement.",
+                    "how": [
+                        "Rotations and targeted practice."
+                    ],
+                    "deliverable": {
+                        "title": "Mock Interview Evidence",
+                        "type": "participation",
+                        "instructions": "Email reflection as evidence of completion (or schedule makeup).",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 34,
+                    "title": "Resume + Cover Letter Finalization",
+                    "what": "Polish documents to final quality.",
+                    "why": "These become reusable career assets.",
+                    "how": [
+                        "Formatting, proofreading, clarity checks."
+                    ],
+                    "deliverable": {
+                        "title": "Final Resume + Cover Letter Template",
+                        "type": "bundle",
+                        "instructions": "Submit final resume and reusable cover letter template.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 35,
+                    "title": "Professional Portfolio Basics",
+                    "what": "Organize career documents and evidence.",
+                    "why": "A simple portfolio supports applications and interviews.",
+                    "how": [
+                        "Create a folder or drive structure; organize artifacts."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Student Portfolio Guide",
+                            "url": "https://www.canva.com/learn/digital-portfolio/",
+                            "description": "How to organize and display your work."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Portfolio Link/Structure",
+                        "type": "link_or_screenshot",
+                        "instructions": "Exemplar Naming: '01_Resume_LastName.pdf', '02_CoverLetter_LastName.pdf', '03_PathwayMap_LastName.pdf'. Organize your work into a folder named 'VCD_CareerPortfolio_LastName'. Submit the link or a screenshot showing this structure.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 36,
+                    "title": "Co-op Flex Day: Catch-Up",
+                    "what": "Make-up and completion day for Unit 3 requirements.",
+                    "why": "Prevent backlog for end-of-unit pass verification.",
+                    "how": [
+                        "Independent work and resubmissions."
+                    ],
+                    "deliverable": {
+                        "title": "Unit 3 Status Email",
+                        "type": "status_update",
+                        "instructions": "Email which Unit 3 deliverables are complete and which are missing.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 37,
+                    "title": "Workplace Behavior & Reliability",
+                    "what": "Attendance, punctuality, communication, and reliability habits.",
+                    "why": "Reliability is a top hiring/retention factor.",
+                    "how": [
+                        "Discuss expectations; build a personal reliability plan."
+                    ],
+                    "deliverable": {
+                        "title": "Reliability Plan",
+                        "type": "plan",
+                        "instructions": "Write 3 reliability commitments + what you will do when problems come up.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 38,
+                    "title": "Workplace Conflict & Communication",
+                    "what": "Handle feedback and conflict professionally.",
+                    "why": "Soft skills prevent job loss.",
+                    "how": [
+                        "Scenario responses; professional phrasing practice."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Conflict Resolution in the Workplace",
+                            "url": "https://www.mindtools.com/pages/article/newLDR_81.htm",
+                            "description": "Strategies for handling difficult conversations."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Scenario Response (Conflict)",
+                        "type": "short_response",
+                        "instructions": "Scenario: A teammate tells you that your documentation style is 'sloppy' and needs to be redone. Respond professionally: (1) Acknowledge the feedback. (2) Ask for a specific example of what to improve. (3) Propose a solution/next step.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 39,
+                    "title": "Unit 3 Verification Checkpoint",
+                    "what": "Verify completion of all readiness artifacts.",
+                    "why": "Pass/Fail requires completion and acceptable quality.",
+                    "how": [
+                        "Tracker review and final submissions."
+                    ],
+                    "deliverable": {
+                        "title": "Unit 3 Completion Confirmation",
+                        "type": "confirmation",
+                        "instructions": "Email confirmation that Unit 3 requirements are complete; attach/link missing items if needed.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 40,
+                    "title": "Transition: Entrepreneurship Launch",
+                    "what": "Define entrepreneurship in Automotive/Medical contexts.",
+                    "why": "Many skilled workers become owners or managers.",
+                    "how": [
+                        "Examples of businesses; discuss value proposition."
+                    ],
+                    "resources": [
+                        {
+                            "title": "Young Entrepreneurs Guide",
+                            "url": "https://www.sba.gov/business-guide",
+                            "description": "Official guide to starting a business from SBA.gov."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Business Idea (Field-Specific)",
+                        "type": "idea",
+                        "instructions": "Think of a problem in your field (e.g., long wait times for oil changes or difficulty tracking patient vitals). Describe your business idea: 'My business, [Name], solves the problem of [Problem] by [Solution].'",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 41,
+                    "title": "How Businesses Work",
+                    "what": "Customers, costs, revenue, operations.",
+                    "why": "Understanding basics improves employability and leadership readiness.",
+                    "how": [
+                        "Mini-lesson + examples; map simple business flow."
+                    ],
+                    "resources": [
+                        {
+                            "title": "How Businesses Work (Investopedia)",
+                            "url": "https://www.investopedia.com/articles/basics/11/3-s-simple-business.asp",
+                            "description": "Basics of business operations."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Business Operations Paragraph",
+                        "type": "paragraph",
+                        "instructions": "Explain how a business in your field functions day-to-day (1 paragraph).",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 42,
+                    "title": "Pricing, Costs, and Profit (Basics)",
+                    "what": "How pricing relates to cost and profit.",
+                    "why": "Owners and employees must understand how money works in business.",
+                    "how": [
+                        "Simple example calculation; discuss tradeoffs."
+                    ],
+                    "deliverable": {
+                        "title": "Cost vs Price Example",
+                        "type": "short_response",
+                        "instructions": "Imagine you provide a service (e.g., an oil change or a blood pressure check). (1) List one direct 'Cost' (supplies/time). (2) Set a 'Price' for the service. (3) Explain why the difference (profit) is necessary for the business to survive.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 43,
+                    "title": "AI in Business (Ethical + Practical)",
+                    "what": "How AI supports businesses and where boundaries exist.",
+                    "why": "AI can improve productivity but introduces privacy/safety risks.",
+                    "how": [
+                        "Examples in each field; discuss do’s and don’ts."
+                    ],
+                    "deliverable": {
+                        "title": "Responsible AI Use in My Business",
+                        "type": "short_response",
+                        "instructions": "Describe 2 ways AI could help and 1 ethical boundary you must follow.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 44,
+                    "title": "One-Page Business Plan Draft",
+                    "what": "Draft a simple, one-page business plan.",
+                    "why": "Planning clarifies viability and execution steps.",
+                    "how": [
+                        "Use template: problem, customer, solution, operations, costs, marketing, AI support."
+                    ],
+                    "resources": [
+                        {
+                            "title": "One-Page Business Plan Template",
+                            "url": "https://www.100startup.com/resources/business-plan/",
+                            "description": "Simple template for drafting your idea."
+                        }
+                    ],
+                    "deliverable": {
+                        "title": "Business Plan Draft",
+                        "type": "document",
+                        "instructions": "Exemplar: Problem: 'Many local car owners can't get an oil change on weekends.' Solution: 'Weekend-only mobile lube service.' Customer: 'Busy professionals/families.' Marketing: 'Facebook groups and flyer drops.' Use the template at the bottom of the page (Problem, customer, solution...) and fill in 2-3 sentences per section.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 45,
+                    "title": "Business Plan Revision",
+                    "what": "Revise plan for clarity and realism.",
+                    "why": "Real plans require iteration.",
+                    "how": [
+                        "Peer feedback + instructor notes; revise accordingly."
+                    ],
+                    "deliverable": {
+                        "title": "Business Plan Revised",
+                        "type": "document",
+                        "instructions": "Submit revised plan with at least 3 improvements.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                }
+            ]
+        },
+        {
+            "unit_id": "U4",
+            "title": "Entrepreneurship Completion & Final Verification",
+            "day_range": {
+                "start": 46,
+                "end": 60
+            },
+            "outcomes": [
+                "Students complete a one-page business plan aligned to their field.",
+                "Students understand business fundamentals and responsible AI integration.",
+                "Students complete final verification for Pass/Fail."
+            ],
+            "days": [
+                {
+                    "day_number": 46,
+                    "title": "Marketing Basics",
+                    "what": "How businesses attract and retain customers.",
+                    "why": "Even great services fail without customers.",
+                    "how": [
+                        "Define customer, channel, message; create a simple marketing idea."
+                    ],
+                    "deliverable": {
+                        "title": "Marketing Message",
+                        "type": "copy",
+                        "instructions": "Exemplar: 'Tired of waiting in diagnostic lines? [Business Name] provides mobile brake diagnostics that come to you. Professional service, transparent pricing, and weekend availability. Contact us today for a quotes.' Write a similar 3-6 sentence message for your specific business idea.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 47,
+                    "title": "Customer Experience & Reputation",
+                    "what": "Reviews, professionalism, reliability, service quality.",
+                    "why": "Reputation drives repeat business and referrals.",
+                    "how": [
+                        "Discuss examples; create a customer experience standard."
+                    ],
+                    "deliverable": {
+                        "title": "Customer Experience Standard",
+                        "type": "list",
+                        "instructions": "List 5 standards. Exemplar: (1) 'We will respond to all quotes within 2 hours.' (2) 'We will maintain a clean and organized workspace.' (3) 'We will explain all technical issues in plain English to customers.' (4) 'We will follow up 48 hours after service.' (5) 'We will offer a satisfaction guarantee on all labor.'",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 48,
+                    "title": "Business Plan Finalization",
+                    "what": "Finalize the one-page business plan.",
+                    "why": "Final artifact required for passing Entrepreneurship.",
+                    "how": [
+                        "Proofread, finalize sections, ensure realism and ethics."
+                    ],
+                    "deliverable": {
+                        "title": "Business Plan Final",
+                        "type": "document",
+                        "instructions": "Submit final one-page business plan (clean formatting).",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 49,
+                    "title": "OSHA 10 Verification",
+                    "what": "Confirm OSHA 10 completion status.",
+                    "why": "Safety credential is required for program compliance.",
+                    "how": [
+                        "Students submit proof or identify missing steps."
+                    ],
+                    "deliverable": {
+                        "title": "OSHA 10 Proof",
+                        "type": "verification",
+                        "instructions": "Email proof of OSHA 10 completion (certificate/screenshot) or request the makeup plan.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 50,
+                    "title": "Final Portfolio Assembly",
+                    "what": "Compile all required artifacts into a single organized portfolio.",
+                    "why": "Organized artifacts simplify verification and future use.",
+                    "how": [
+                        "Create a single folder; label files consistently."
+                    ],
+                    "deliverable": {
+                        "title": "Portfolio Link",
+                        "type": "link",
+                        "instructions": "Email a link to your organized portfolio folder (or attach zipped folder if needed).",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 51,
+                    "title": "AI Reflection: My Responsible Use Plan",
+                    "what": "Reflect on responsible AI use in school and work.",
+                    "why": "AI competence is a career skill; ethics prevents harm.",
+                    "how": [
+                        "Write a short reflection with specific examples."
+                    ],
+                    "deliverable": {
+                        "title": "Responsible AI Use Plan",
+                        "type": "reflection",
+                        "instructions": "Write 8–12 sentences: how you will use AI to support your career and what boundaries you will follow.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 52,
+                    "title": "Make-Up Day 1",
+                    "what": "Catch up on missing artifacts.",
+                    "why": "Pass/Fail requires completeness.",
+                    "how": [
+                        "Independent work + resubmission."
+                    ],
+                    "deliverable": {
+                        "title": "Make-Up Submission",
+                        "type": "makeup",
+                        "instructions": "Email any missing deliverables as a bundle; list what each file/link is.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 53,
+                    "title": "Make-Up Day 2",
+                    "what": "Second catch-up window and verification support.",
+                    "why": "Ensure students on co-op can complete requirements.",
+                    "how": [
+                        "Complete and resubmit missing work."
+                    ],
+                    "deliverable": {
+                        "title": "Updated Status Email",
+                        "type": "status_update",
+                        "instructions": "Email updated status: complete/incomplete list of required artifacts.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 54,
+                    "title": "Verification Conference Prep",
+                    "what": "Prepare for final verification (what’s done, what’s missing).",
+                    "why": "Clear accountability prevents surprises.",
+                    "how": [
+                        "Students self-check using the required artifacts list."
+                    ],
+                    "deliverable": {
+                        "title": "Self-Verification Checklist",
+                        "type": "checklist",
+                        "instructions": "Submit a checklist confirming each required artifact is complete with link/file name.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 55,
+                    "title": "Final Verification Day 1",
+                    "what": "Instructor verifies portfolios and completion evidence.",
+                    "why": "Formal pass/fail determination requires verification.",
+                    "how": [
+                        "Student conferences / verification review."
+                    ],
+                    "deliverable": {
+                        "title": "Verification Follow-Up",
+                        "type": "confirmation",
+                        "instructions": "Email any missing items requested during verification review.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 56,
+                    "title": "Final Verification Day 2",
+                    "what": "Complete remaining verifications and finalize statuses.",
+                    "why": "Final clarity for students and administration.",
+                    "how": [
+                        "Final checks and last resubmissions."
+                    ],
+                    "deliverable": {
+                        "title": "Final Submission Bundle",
+                        "type": "bundle",
+                        "instructions": "Email final bundle of any outstanding artifacts (if applicable).",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 57,
+                    "title": "Course Reflection",
+                    "what": "Reflect on skills gained and next steps.",
+                    "why": "Reflection consolidates learning and improves transfer to real life.",
+                    "how": [
+                        "Short reflection prompt."
+                    ],
+                    "deliverable": {
+                        "title": "Course Reflection",
+                        "type": "reflection",
+                        "instructions": "Write 10–12 sentences: what you learned, what you improved, and your next step in your career plan.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 58,
+                    "title": "Professional Next-Step Plan",
+                    "what": "Define immediate next actions (30-day plan).",
+                    "why": "Plans without actions don’t change outcomes.",
+                    "how": [
+                        "Set 3 actions + dates."
+                    ],
+                    "deliverable": {
+                        "title": "30-Day Action Plan",
+                        "type": "plan",
+                        "instructions": "List 3 concrete actions you will take in the next 30 days with target dates.",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                },
+                {
+                    "day_number": 59,
+                    "title": "Final Pass/Fail Communication",
+                    "what": "Students confirm final status and any remaining gaps.",
+                    "why": "Final communication prevents disputes and confusion.",
+                    "how": [
+                        "Students send a final status confirmation."
+                    ],
+                    "deliverable": {
+                        "title": "Final Status Confirmation Email",
+                        "type": "confirmation",
+                        "instructions": "Email: confirm you have submitted all required artifacts and provide your portfolio link.",
+                        "ai_allowed": false,
+                        "ai_disclosure_required": false
+                    }
+                },
+                {
+                    "day_number": 60,
+                    "title": "Closeout Day",
+                    "what": "Celebrate completion and reinforce workplace expectations.",
+                    "why": "Closure increases retention and confidence.",
+                    "how": [
+                        "Brief wrap + optional share-outs."
+                    ],
+                    "deliverable": {
+                        "title": "Final Thank-You / Professional Message",
+                        "type": "email_draft",
+                        "instructions": "Write a professional thank-you message to a mentor/instructor/employer (template style).",
+                        "ai_allowed": true,
+                        "ai_disclosure_required": true
+                    }
+                }
+            ]
+        }
+    ],
+    "templates": {
+        "one_page_business_plan": {
+            "sections": [
+                "Business Name (Draft)",
+                "Problem (What issue are you solving?)",
+                "Target Customer (Who is it for?)",
+                "Solution (What do you offer?)",
+                "Operations (How it works day-to-day)",
+                "Costs (What do you need to pay for?)",
+                "Pricing (How do you charge?)",
+                "Marketing (How do people find you?)",
+                "Responsible AI Use (How AI helps + your boundaries)"
+            ]
+        },
+        "resume_sections": [
+            "Header",
+            "Summary",
+            "Skills",
+            "Experience",
+            "Education",
+            "Certifications",
+            "Activities/Projects (optional)"
+        ],
+        "cover_letter_sections": [
+            "Header",
+            "Greeting",
+            "Why this role/company",
+            "Your fit (skills + evidence)",
+            "Close + next step",
+            "Signature"
+        ],
+        "elevator_pitch_structure": [
+            "Name + program",
+            "What you’re training to do",
+            "1–2 strengths relevant to the field",
+            "What you’re looking for (job/co-op/learning opportunity)"
+        ]
+    }
+}

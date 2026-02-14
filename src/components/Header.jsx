@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Menu } from 'lucide-react';
+import { GraduationCap, Menu, Sun, Moon } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext';
 
 const Header = () => {
+    const { theme, toggleTheme } = useTheme();
+
     return (
         <header style={{
             height: 'var(--header-height)',
@@ -25,13 +28,18 @@ const Header = () => {
                     <GraduationCap size={32} />
                     <span className="logo-text">VCD</span>
                 </Link>
-                <nav style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
-                    <Link to="/" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-light)' }}>Home</Link>
-                    <Link to="/artifacts" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-light)' }}>Artifacts</Link>
-                </nav>
-                <button style={{ color: 'var(--text-light)' }}>
-                    <Menu size={24} />
-                </button>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                    <nav style={{ display: 'flex', gap: '24px', alignItems: 'center' }}>
+                        <Link to="/" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-light)' }}>Home</Link>
+                        <Link to="/artifacts" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--text-light)' }}>Artifacts</Link>
+                    </nav>
+                    <button onClick={toggleTheme} style={{ color: 'var(--text-light)', padding: '8px', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }} aria-label="Toggle theme">
+                        {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+                    </button>
+                    <button style={{ color: 'var(--text-light)' }}>
+                        <Menu size={24} />
+                    </button>
+                </div>
             </div>
         </header>
     );

@@ -1,4 +1,5 @@
 :root {
+  /* Default Light Theme */
   --primary: #0284c7;
   --primary-dark: #0369a1;
   --secondary: #0d9488;
@@ -10,6 +11,19 @@
   --border: #e2e8f0;
   --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --header-height: 64px;
+}
+
+[data-theme='dark'] {
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+  --secondary: #14b8a6;
+  --accent: #5eead4;
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #f1f5f9;
+  --text-light: #94a3b8;
+  --border: #334155;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.3);
 }
 
 * {
