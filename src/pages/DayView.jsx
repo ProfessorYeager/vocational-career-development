@@ -6,7 +6,7 @@ import { useProgress } from '../context/ProgressContext';
 
 const DayView = () => {
     const { dayId } = useParams();
-    const { isComplete, toggleComplete } = useProgress();
+    const { isComplete, toggleComplete, triggerCelebration } = useProgress();
 
     // Find day across all units
     let day;
@@ -165,7 +165,10 @@ const DayView = () => {
                     {/* Completion Button */}
                     <div style={{ marginTop: '32px', display: 'flex', justifyContent: 'center' }}>
                         <button
-                            onClick={() => toggleComplete(day.day_number)}
+                            onClick={() => {
+                                if (!completed) triggerCelebration();
+                                toggleComplete(day.day_number);
+                            }}
                             style={{
                                 backgroundColor: completed ? '#10b981' : 'white',
                                 color: completed ? 'white' : '#10b981',

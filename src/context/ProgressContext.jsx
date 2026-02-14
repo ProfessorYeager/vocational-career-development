@@ -8,6 +8,8 @@ export const ProgressProvider = ({ children }) => {
         return saved ? JSON.parse(saved) : [];
     });
 
+    const [celebrating, setCelebrating] = useState(false);
+
     useEffect(() => {
         localStorage.setItem('completedDays', JSON.stringify(completedDays));
     }, [completedDays]);
@@ -22,12 +24,17 @@ export const ProgressProvider = ({ children }) => {
         });
     };
 
+    const triggerCelebration = () => {
+        setCelebrating(true);
+        setTimeout(() => setCelebrating(false), 5000); // Celebrate for 5 seconds
+    };
+
     const isComplete = (dayId) => {
         return completedDays.includes(dayId);
     };
 
     return (
-        <ProgressContext.Provider value={{ completedDays, toggleComplete, isComplete }}>
+        <ProgressContext.Provider value={{ completedDays, toggleComplete, isComplete, celebrating, triggerCelebration }}>
             {children}
         </ProgressContext.Provider>
     );
