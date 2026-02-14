@@ -1,10 +1,12 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import data from '../data/courseContent.json';
-import { ChevronLeft, Info, HelpCircle, ListTodo, Send, Sparkles, BookOpen, ExternalLink } from 'lucide-react';
+import { ChevronLeft, Info, HelpCircle, ListTodo, Send, Sparkles, BookOpen, ExternalLink, CheckCircle } from 'lucide-react';
+import { useProgress } from '../context/ProgressContext';
 
 const DayView = () => {
     const { dayId } = useParams();
+    const { isComplete, toggleComplete } = useProgress();
 
     // Find day across all units
     let day;
@@ -19,6 +21,8 @@ const DayView = () => {
     }
 
     if (!day) return <div className="container">Day not found</div>;
+
+    const completed = isComplete(day.day_number);
 
     return (
         <div className="container" style={{ paddingBottom: '80px' }}>
@@ -156,6 +160,31 @@ const DayView = () => {
                     <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', color: '#0369a1', fontSize: '0.9rem' }}>
                         <Info size={16} />
                         <span>Submission: Email your instructor your completed deliverable with the subject "{data.course.submission_method.email_conventions.subject_format.replace('{day_number}', day.day_number).replace('{lesson_name}', day.title)}"</span>
+                    </div>
+
+                    {/* Completion Button */}
+                    <div style={{ marginTop: '32px', display: 'flex', justifyContent: 'center' }}>
+                        <button
+                            onClick={() => toggleComplete(day.day_number)}
+                            style={{
+                                backgroundColor: completed ? '#10b981' : 'white',
+                                color: completed ? 'white' : '#10b981',
+                                border: '2px solid #10b981',
+                                padding: '12px 32px',
+                                borderRadius: '9999px',
+                                fontSize: '1.1rem',
+                                fontWeight: 700,
+                                cursor: 'pointer',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '8px',
+                                transition: 'all 0.2s',
+                                boxShadow: completed ? '0 4px 6px -1px rgba(16, 185, 129, 0.4)' : 'none'
+                            }}
+                        >
+                            <CheckCircle size={24} />
+                            {completed ? 'Completed!' : 'Mark as Complete'}
+                        </button>
                     </div>
                 </section>
             </div>

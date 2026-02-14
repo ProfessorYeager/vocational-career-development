@@ -1,10 +1,12 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import data from '../data/courseContent.json';
-import { ChevronLeft, Calendar, CheckSquare, Info, Sparkles } from 'lucide-react';
+import { ChevronLeft, Calendar, CheckSquare, Info, Sparkles, CheckCircle } from 'lucide-react';
+import { useProgress } from '../context/ProgressContext';
 
 const UnitView = () => {
     const { unitId } = useParams();
+    const { isComplete } = useProgress();
     const unit = data.units.find(u => u.unit_id === unitId);
 
     if (!unit) return <div className="container">Unit not found</div>;
@@ -71,37 +73,45 @@ const UnitView = () => {
             </h2>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                {unit.days.map((day) => (
-                    <Link key={day.day_number} to={`/day/${day.day_number}`} className="card" style={{
-                        padding: '16px 24px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '20px',
-                        transition: 'all 0.2s'
-                    }}>
-                        <div style={{
-                            width: '40px',
-                            height: '40px',
-                            borderRadius: '8px',
-                            backgroundColor: 'var(--bg)',
+                {unit.days.map((day) => {
+                    const completed = isComplete(day.day_number);
+                    return (
+                        <Link key={day.day_number} to={`/day/${day.day_number}`} className="card" style={{
+                            padding: '16px 24px',
                             display: 'flex',
                             alignItems: 'center',
-                            justifyContent: 'center',
-                            fontWeight: 800,
-                            color: config.color,
-                            flexShrink: 0
+                            gap: '20px',
+                            transition: 'all 0.2s',
+                            borderLeft: completed ? '4px solid #10b981' : '1px solid var(--border)'
                         }}>
-                            {day.day_number}
-                        </div>
-                        <div style={{ flex: 1 }}>
-                            <h4 style={{ margin: 0, fontSize: '1.05rem' }}>{day.title}</h4>
-                            <p style={{ margin: 0, color: 'var(--text-light)', fontSize: '0.9rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '400px' }}>
-                                {day.deliverable.title}
-                            </p>
-                        </div>
-                        <CheckSquare size={20} style={{ color: 'var(--border)' }} />
-                    </Link>
-                ))}
+                            <div style={{
+                                width: '40px',
+                                height: '40px',
+                                borderRadius: '8px',
+                                backgroundColor: 'var(--bg)',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                fontWeight: 800,
+                                color: config.color,
+                                flexShrink: 0
+                            }}>
+                                {day.day_number}
+                            </div>
+                            <div style={{ flex: 1 }}>
+                                <h4 style={{ margin: 0, fontSize: '1.05rem', color: completed ? 'var(--text-light)' : 'var(--text)', textDecoration: completed ? 'line-through' : 'none' }}>{day.title}</h4>
+                                <p style={{ margin: 0, color: 'var(--text-light)', fontSize: '0.9rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: '400px' }}>
+                                    {day.deliverable.title}
+                                </p>
+                            </div>
+                            {completed ? (
+                                <CheckCircle size={24} style={{ color: '#10b981' }} />
+                            ) : (
+                                <CheckSquare size={20} style={{ color: 'var(--border)' }} />
+                            )}
+                        </Link>
+                    );
+                })}
             </div>
         </div>
     );
